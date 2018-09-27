@@ -1,0 +1,159 @@
+{{CCA-San_Diego}}
+<html>
+<h1>CCA InterLab 2018</h1>
+<h3>Figure 1: Absorbance measurement of LUDOX 100% and H2O and correction factor table.</h3>
+<table class="rwd-table">
+  <tr>
+    <th>Replicate</th>
+    <th>Ludox CL-X</th>
+    <th>H20</th>
+
+  </tr>
+  <tr>
+    <td data-th="Replicates">Replicate 1</td>
+    <td data-th="Ludox">0.103</td>
+    <td data-th="H2O">0.040</td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">Replicate 1</td>
+    <td data-th="Ludox">0.108</td>
+    <td data-th="H2O">0.040</td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">Replicate 2</td>
+    <td data-th="Ludox">0.107</td>
+    <td data-th="H2O">0.040</td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">Replicate 3</td>
+    <td data-th="Ludox">0.119</td>
+    <td data-th="H2O">0.040</td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">Arith. Mean</td>
+    <td data-th="Ludox">0.109</td>
+    <td data-th="H2O"></td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">Corrected Abs600</td>
+    <td data-th="Ludox">0.069</td>
+    <td data-th="H2O"></td>
+   
+  </tr>
+  <tr>
+    <td data-th="Replicates">Reference OD600</td>
+    <td data-th="Ludox">0.063</td>
+    <td data-th="H2O"></td>
+  </tr>
+  <tr>
+    <td data-th="Replicates">  OD600/Abs600
+</td>
+    <td data-th="Ludox">0.910</td>
+    <td data-th="H2O"></td>
+  </tr>
+
+</table>
+<style>
+@import "compass/css3";
+
+$breakpoint-alpha: 480px; 
+
+.rwd-table {
+  margin: 1em 0;
+  min-width: 300px; 
+  
+  tr {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    display: none; 
+  }
+  
+  td {
+    display: block; 
+    
+    &:first-child {
+      padding-top: .5em;
+    }
+    &:last-child {
+      padding-bottom: .5em;
+    }
+
+    &:before {
+      content: attr(data-th)": "; 
+      font-weight: bold;
+
+  
+      width: 6.5em; 
+      display: inline-block;
+      
+      @media (min-width: $breakpoint-alpha) {
+        display: none;
+      }
+    }
+  }
+  
+  th, td {
+    text-align: left;
+    
+    @media (min-width: $breakpoint-alpha) {
+      display: table-cell;
+      padding: .25em .5em;
+      
+      &:first-child {
+        padding-left: 0;
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+  }
+  
+  
+}
+
+
+// presentational styling
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300,400,700';
+
+body {
+  padding: 0 2em;
+  font-family: Montserrat, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  color: #444;
+  background: #ffffff;
+}
+
+h1 {
+  font-weight: normal;
+  letter-spacing: -1px;
+  color: #0cac66;
+}
+
+.rwd-table {
+  background: #0cac66;
+  color: #fff;
+  border-radius: .4em;
+  overflow: hidden;
+  tr {
+    border-color: lighten(#34495E, 10%);
+  }
+  th, td {
+    margin: .5em 1em;
+    @media (min-width: $breakpoint-alpha) { 
+      padding: 1em !important; 
+    }
+  }
+  th, td:before {
+    color: #ffffff;
+  }
+}
+</style>
+
+</html>
