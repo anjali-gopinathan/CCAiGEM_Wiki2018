@@ -257,9 +257,9 @@ th {
   }
 }
 @font-face {
-  font-family: 'Glyphicons Halflings';
+  font-family: 'Montserrat-Bold';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('T--CCA-San_Diego--Montserrat-Bold.ttf');
   src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
@@ -12435,8 +12435,8 @@ button.close {
 
 /*Good dropdown1 css*/
 .dropbtn {
-	background-color: #f8f8f8;	/*Navbar background color*/
-    color: black;				/*Navbar text color*/
+	background-color: #0cac66;	/*Navbar background color*/
+    color: white;				/*Navbar text color*/
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -12471,7 +12471,7 @@ button.close {
 }
 
 .dropdown1:hover .dropbtn {
-    background-color: #8bd0e5;		/*Navbar background color on hover*/
+    background-color: #0c88d7;		/*Navbar background color on hover*/
 }
 
 /*Animate css*/
@@ -15741,6 +15741,72 @@ button.close {
   animation-name: slideOutUp;
 }
 
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url(T--CCA-San_Diego--Montserrat-Bold.ttf) format("truetype");
+}
+p.fontMontserrat { 
+    font-family: "Montserrat-Bold";
+}
+@font-face {
+	font-family: "SourceSansPro";
+	src: url(T--CCA-San_Diego--SourceSansPro-Italic.ttf) format("truetype");
+}
+p.fontSourceSans {
+	font-family: "SourceSansPro";
+}
+
+/*FOOTER*/
+#contact-bar {
+  background-color:#0cac66;
+}
+
+#contact-bar a {
+  color: white;
+  text-decoration: none;
+}
+
+#contact-bar ul li{
+  padding:10px;
+  font-size: 200%;
+}
+
+#contact-bar ul li:hover{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+}
+.small-text{
+  font-size: 18px;
+}
+
+.big-icon {
+    font-size: 48px;
+}
+.big-text{
+    font-size: 30px;
+}
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+div.c {
+    width: 90%;
+  color: white;
+  font-size: 12px
+}
 
 
 <script>
@@ -15788,98 +15854,201 @@ $(document).ready(function(){
         </div>
 		<!--start Sitemap-->
         <div id="navbar" class="navbar-collapse collapse">
-          <ul id="top-menu" class="nav navbar-nav navbar-left main-nav">
-            <li>
-			
-				<div class="dropdown1">
-				  <button class="dropbtn">Project</button>
-				  <div class="dropdown1-content">
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Description">Description</a>
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Design">Design</a>
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Parts">Parts</a>
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Results">Results</a>
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Applied_Design">Applied Design</a>
-					<a href="http://2018.igem.org/Team:CCA-San_Diego/Entrepreneurship">Entrepreneurship</a>
-
-				  </div>
-				</div>
-			  
-			  
-            </li>
-            <li>
-			
-				<div class="dropdown1">
-					<button class="dropbtn">Experiments</button>
+			<div class="fontMontserrat">
+			  <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+				<li>
+				
+					<div class="dropdown1">
+					  <button class="dropbtn">Project</button>
 					  <div class="dropdown1-content">
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Experiments">Experiments</a>               
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Measurement">Measurement</a>
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Model">Model</a>
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Demonstrate">Demonstrate</a>          
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Notebook">Notebook</a>           
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Description">Description</a>
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Design">Design</a>
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Parts">Parts</a>
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Results">Results</a>
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Applied_Design">Applied Design</a>
+						<a href="http://2018.igem.org/Team:CCA-San_Diego/Entrepreneurship">Entrepreneurship</a>
+
 					  </div>
-				</div>
-			  
-            </li>   	
-            <li>
-			
-			
-              	<div class="dropdown1">
-					<button class="dropbtn">Parts</button>
-					<div class="dropdown1-content">
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Parts">Parts</a>           
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Basic_Part">Basic Part</a>
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Composite_Part">Composite Part</a>
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Part_Collection">Part Collection</a>           
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Improve">Improve</a>     
 					</div>
-				</div>
-			  
-			  
-            </li>  			
-			<li>
-			
-			
-                <div class="dropdown1">
-					<button class="dropbtn">Human Practices</button>
-					<div class="dropdown1-content">
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Human_Practices">Human Practices</a>                
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Engagement">Engagement</a>      
+				  
+				  
+				</li>
+				<li>
+				
+					<div class="dropdown1">
+						<button class="dropbtn">Experiments</button>
+						  <div class="dropdown1-content">
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Experiments">Experiments</a>               
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Measurement">Measurement</a>
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Model">Model</a>
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Demonstrate">Demonstrate</a>          
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Notebook">Notebook</a>  
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Interlab">Interlab</a>  							
+						  </div>
 					</div>
-				</div>
-			  
-			  
-            </li> 
-			<li>
-			
-			
-				<div class="dropdown1">
-					<button class="dropbtn">Team</button>
-					<div class="dropdown1-content">
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Team">Team</a>                
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Attributions">Attributions</a>
-					</div>
-				</div>
+				  
+				</li>   	
+				<li>
 				
 				
-			</li>
-			<li>
-				<div class="dropdown1">
-					<button class="dropbtn">
-						<a href="http://2018.igem.org/Team:CCA-San_Diego/Safety">Safety</a>
-					</button>
-
-
-				</div>
+					<div class="dropdown1">
+						<button class="dropbtn">Parts</button>
+						<div class="dropdown1-content">
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Parts">Parts</a>           
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Basic_Part">Basic Part</a>
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Composite_Part">Composite Part</a>
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Part_Collection">Part Collection</a>           
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Improve">Improve</a>     
+						</div>
+					</div>
+				  
+				  
+				</li>  			
+				<li>
 				
-			</li>
+				
+					<div class="dropdown1">
+						<button class="dropbtn">Human Practices</button>
+						<div class="dropdown1-content">
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Human_Practices">Human Practices</a>                
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Engagement">Engagement</a>      
+						</div>
+					</div>
+				  
+				  
+				</li> 
+				<li>
+				
+				
+					<div class="dropdown1">
+						<button class="dropbtn">Team</button>
+						<div class="dropdown1-content">
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Team">Team</a>                
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Attributions">Attributions</a>
+						</div>
+					</div>
+					
+					
+				</li>
+				<li>
+					<div class="dropdown1">
+						<button class="dropbtn">
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Safety">Safety</a>
+						</button>
 
 
-						
-          </ul>                     
+					</div>
+					
+				</li>
+
+
+							
+			  </ul> 
+			</div>
         </div><!--/.nav-collapse -->
 		<!--end Sitemap-->
       </div>     
     </nav>
   </section>
   <!-- END MENU -->
+  
+  <!-- Footer -->
+	<div class="container-fluid row" 
+	id="contact-bar">
+		<div class="column">
+			<li>
+				<a href="#"><i class="#">  </i></a>
+			</li>
+			<ul class="list-inline text-center">
+		
+				<a style="color:white; font-size:200% ">Follow us!</a>  
+				<li>
+					<a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa fa-envelope rotate big-icon"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="fa fa-twitter big-icon"></i></a>
+				</li>
+				  <li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="fa fa-facebook-square big-icon"></i></a>
+				</li>
+				  <li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class=" fa fa-instagram big-icon"></i></a>
+				</li>
+			  </ul>
+			  <ul class="list-inline text-center">
+
+				<li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="small-text">CCA Foundation</i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="small-text">GeneScript</i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="small-text">IDT</i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="#">  </i></a>
+				</li>
+				<li>
+				  <a href="#"><i class="small-text">CCA Quest</i></a>
+				</li>
+			  </ul>
+			  <ul class="list-inline text-center">
+				<a style="color:white; font-size:150%">Canyon Crest Academy iGEM 2018 - HORIZON</a>    <li>
+			  </ul>
+			</div> <!--End first column-->
+			<!--Begin second column-->
+			  <div class="column">
+					<br>
+				<li>
+				  <a href="#"><i class="big-text">Site Navigation</i></a>
+				</li>
+				 <a href="http://2018.igem.org/Team:CCA-San_Diego/Description"><i class="small-text">Project Description</i></a>
+				<br>
+				</li>
+			   <a href="http://2018.igem.org/Team:CCA-San_Diego/Results"><i class="small-text">Project Results</i></a>
+				</li>
+				<br>
+
+				 <a href="http://2018.igem.org/Team:CCA-San_Diego/Notebook"><i class="small-text">Notebook</i></a>
+					</li>
+					<br>
+
+				 <a href="http://2018.igem.org/Team:CCA-San_Diego/Team"><i class="small-text">Team</i></a>
+					</li>
+				  </div>
+				 <div class="column">
+						 <br>
+
+				<li>
+					  <a href="#"><i class=" big-text">About Us:</i></a>
+					</li>
+				<div class="c">Canyon Crest Academy's iGEM team is composed of high school students grade students who enjoy working in STEM. The team is broken up into 4 main sections: lab, outreach, organization, and finance. The lab team is composed of students who go to a laboratory to work on the project. Outreach is made up of students who want to help the team connect with the science community by hosting various events. Students on the organization team design and create both the CCA iGEM website and poster. The finance team, well, manages the money.
+				</div>
+
+		 </div>
+
+	</div>
+  
 </html>
