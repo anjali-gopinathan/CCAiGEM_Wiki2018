@@ -1266,6 +1266,7 @@ h1,
 h2,
 .h2 {
   font-size: 30px;
+  font-weight: bold;
 }
 h3,
 .h3 {
@@ -1600,10 +1601,12 @@ pre code {
   }
 }
 .container-fluid {
+	min-height: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: -50px;
 }
 .row {
   margin-right: -15px;
@@ -4017,8 +4020,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav {
   padding-left: 0;
-  margin-bottom: 0;
+  padding-right: 0;
   list-style: none;
+	margin-left:0;
+	margin-right:0;
 }
 .nav > li {
   position: relative;
@@ -4027,7 +4032,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 10px;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
@@ -4208,7 +4213,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-right-radius: 0;
 }
 .navbar {
-  position: relative;
+  position: left; /*10022001*/
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
@@ -4537,8 +4542,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #0cac66;
+  border-color: #83aaad;
+  width:100%;
+  margin-right:0px;
+  margin-left: 0px;
 }
 .navbar-default .navbar-brand {
   color: #777;
@@ -5840,7 +5848,6 @@ button.list-group-item-danger.active:focus {
   overflow: hidden;
 }
 .embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
 .embed-responsive embed,
 .embed-responsive object,
 .embed-responsive video {
@@ -15757,6 +15764,17 @@ p.fontSourceSans {
 }
 
 /*FOOTER*/
+.wrapper {
+  min-height: 100%;
+
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -50px;
+}
+.footer,
+.push {
+  height: 50px;
+}
 #contact-bar {
   background-color:#0cac66;
 }
@@ -15807,7 +15825,9 @@ div.c {
   color: white;
   font-size: 12px
 }
-
+html{
+scroll-behavior: smooth;
+}
 
 <script>
 window.onclick = function(outOfDropdown) {
@@ -15850,12 +15870,12 @@ $(document).ready(function(){
           </button>
           <!-- LOGO -->              
           <!-- IMG BASED LOGO -->
-          <a class="navbar-brand" href="http://2018.igem.org/Team:CCA-San_Diego"><img src="http://2018.igem.org/wiki/images/c/c6/T--CCA-San_Diego--logoName.png" style="height:30px;width:auto"></a>              
+          <a class="navbar-brand" href="http://2018.igem.org/Team:CCA-San_Diego"><img src="http://2018.igem.org/wiki/images/5/5e/T--CCA-San_Diego--LogoIcon.png" style="height:50px; margin-top:auto; margin-bottom:auto"><!--img src="http://2018.igem.org/wiki/images/c/c6/T--CCA-San_Diego--logoName.png" style="height:30px;width:auto"--></a>              
         </div>
 		<!--start Sitemap-->
         <div id="navbar" class="navbar-collapse collapse">
 			<div class="fontMontserrat">
-			  <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+			  <ul id="top-menu" class="nav navbar-nav navbar-left main-nav">
 				<li>
 				
 					<div class="dropdown1">
@@ -15883,7 +15903,8 @@ $(document).ready(function(){
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Model">Model</a>
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Demonstrate">Demonstrate</a>          
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Notebook">Notebook</a>  
-							<a href="http://2018.igem.org/Team:CCA-San_Diego/Interlab">Interlab</a>  							
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Interlab">Interlab</a>  
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Safety">Safety</a>
 						  </div>
 					</div>
 				  
@@ -15925,12 +15946,13 @@ $(document).ready(function(){
 						<div class="dropdown1-content">
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Team">Team</a>                
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Attributions">Attributions</a>
+							<a href="http://2018.igem.org/Team:CCA-San_Diego/Collaborations">Collaborations</a>
 						</div>
 					</div>
 					
 					
 				</li>
-				<li>
+				<!--li>
 					<div class="dropdown1">
 						<button class="dropbtn">
 							<a href="http://2018.igem.org/Team:CCA-San_Diego/Safety">Safety</a>
@@ -15939,7 +15961,7 @@ $(document).ready(function(){
 
 					</div>
 					
-				</li>
+				</li-->
 
 
 							
@@ -15953,8 +15975,8 @@ $(document).ready(function(){
   <!-- END MENU -->
   
   <!-- Footer -->
-	<div class="container-fluid row" 
-	id="contact-bar">
+  <!--footer class="footer1">
+	<div class="container-fluid" id="contact-bar">
 		<div class="column">
 			<li>
 				<a href="#"><i class="#">  </i></a>
@@ -16019,7 +16041,7 @@ $(document).ready(function(){
 			  </ul>
 			</div> <!--End first column-->
 			<!--Begin second column-->
-			  <div class="column">
+			  <!--div class="column">
 					<br>
 				<li>
 				  <a href="#"><i class="big-text">Site Navigation</i></a>
@@ -16050,5 +16072,6 @@ $(document).ready(function(){
 		 </div>
 
 	</div>
+	</footer-->
   
 </html>
